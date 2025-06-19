@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define PI 3.14159
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int s,l,b,r,b1,ra,b2;
+    scanf("%d%d%d%d%d%d%d",&s,&l,&b,&r,&b1,&ra,&b2);
+    printf("Perimeter of Square:%d\n",4*s);
+      printf("Perimeter of Rectangle:%d\n",2*(l+b));
+      printf("Perimeter of Circle:%.2f\n",floor((2*PI*r)*100)/100);
+      printf("Perimeter of Triangle:%d\n",b1+ra+b2);
+    
+    
+    return 0;
+}

@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   int s, l, b, r, ba, h;
+
+    // Input: s, l, b, r, ba, h
+    scanf("%d%d%d%d%d%d", &s, &l, &b, &r, &ba, &h);
+
+    // Square area
+    printf("Area of Square=%d\n", s * s);
+
+    // Rectangle area
+    printf("Area of Rectangle=%d\n", l * b);
+
+    // Circle area (using float format)
+    printf("Area of Circle=%.2f\n", 3.14159 * r * r);
+
+    // Triangle area (cast to float for correct decimal result)
+    printf("Area of Triangle=%d", (ba * h) / 2);
+
+    return 0;
+}

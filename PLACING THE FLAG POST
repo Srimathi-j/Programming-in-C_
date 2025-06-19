@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    printf("x-coordinate:%d\n",a);
+    printf("y-coordinate:%d\n",b);
+    printf("Length:%d\n",c);
+    int d=a+(c/2);
+    int e=b+(c/2);
+    printf("Centre of the ground is at (%d,%d)",d,e);
+    
+    return 0;
+}

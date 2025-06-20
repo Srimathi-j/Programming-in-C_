@@ -1,0 +1,30 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+
+int main() {
+    int n, num, even = 0, odd = 0;
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &num);
+        if (num % 2 == 0)
+            even++;
+        else
+            odd++;
+    }
+
+    if (even == n)
+        printf("Even\n");
+    else if (odd == n)
+        printf("Odd\n");
+    else
+        printf("Mixed\n");
+
+    return 0;
+}

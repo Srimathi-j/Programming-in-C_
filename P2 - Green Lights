@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    float speed, distance, time;
+    scanf("%f", &speed);
+    scanf("%f", &distance);
+    scanf("%f", &time);
+
+    float time_needed = (distance / speed) * 3600;
+
+    if (time_needed < time) {
+        printf("Yes\n");
+    } else {
+        printf("No\n");
+    }
+
+    return 0;
+}

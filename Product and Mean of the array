@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main() {
+    int n, val;
+    float product = 1, sum = 0, mean;
+
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &val);
+        product *= val;
+        sum += val;
+    }
+
+    mean = sum / n;
+
+    printf("Product of the array:%.2f\n", product);
+    printf("Mean of the array:%.3f\n", mean);
+
+    return 0;
+}
+

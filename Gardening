@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int rows, columns, treeNumber;
+    scanf("%d %d %d", &rows, &columns, &treeNumber);
+
+    int isMango = 0;
+
+    // Loop through each row of 2nd column and second last column
+    for (int i = 1; i <= rows; i++) {
+        int secondColTree = (2 - 1) * rows + i;
+        int secondLastColTree = (columns - 2) * rows + i;
+
+        if (treeNumber == secondColTree || treeNumber == secondLastColTree) {
+            isMango = 1;
+            break;
+        }
+    }
+
+    if (isMango)
+        printf("It is a mango tree\n");
+    else
+        printf("It is not a mango tree\n");
+
+    return 0;
+}
